@@ -3,8 +3,7 @@ import replicate
 import streamlit as st
 
 # Set the Replicate API token
-os.environ["REPLICATE_API_TOKEN"] = "r8_G2f177ag7U7mu7sPhxeXHGVqEwYWDJt4VVNUp"
-
+os.environ["REPLICATE_API_TOKEN"] = st.secrets["REPLICATE_API_TOKEN"]
 # Streamlit app layout
 st.title("Bald filter")
 st.write("Enter a prompt to generate an image using AI.")
